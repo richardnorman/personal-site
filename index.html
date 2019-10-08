@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="vendors/js/jquery.onepage-scroll.min.js"></script>
+    <script type="text/javascript" src="resources/js/script.js"></script>
+
+    <link rel="stylesheet" href="vendors/css/ionicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/onepage-scroll.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css' />
+
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+</head>
+
+<body>
+    <div class="main">
+        <section class="section-header">
+            <h1>I am a
+                <span class="typer" id="main" data-words="developer,student,entrepeneur,go-getter" data-delay="100"
+                    data-deleteDelay="1000"></span>
+                <span class="cursor" data-owner="main"></span>
+            </h1>
+            <script async src="vendors/js/typer.js"></script>
+            <p>I love coding up new ideas and making them a reality</p>
+            <img class="developer-desk-header" src="resources/img/developer-desk.jpeg" />
+        </section>
+        <section class="section-education">
+            <h1>I am currently a computer science student at the Univeristy of Calgary</h1>
+            <p>🏋️‍♂️</p>
+            <img class="UofC-logo" src="resources/img/UofC.png" alt="UofC Logo" />
+        </section>
+        <section class="section-projects">
+            <h1>In my free time I enjoy learning development tools and creating new projects</h1>
+            <div class="my-projects">
+                <a href="https://github.com/richardnorman">
+                    <figure>
+                        <h3><b>My Github</b></h3>
+                        <p>Check out my github for more of my projects!</p>
+                        <img class="projects-github" src="resources/img/Github-Cat.png" />
+                    </figure>
+                </a>
+                <a href="https://www.microsoft.com/en-us/p/shifty-shootouts/9p1l9dg65jgm?activetab=pivot:overviewtab">
+                    <figure>
+                        <h3><b>Shifty Shootouts</b></h3>
+                        <p>A multiplayer soccer penalty game that is for sale on the xbox store. Created with Unity and
+                            C#.</p>
+                        <img class="projects-shiftyshootouts" src="resources/img/ShiftyShootouts-Icon.png" />
+                    </figure>
+                </a>
+                <a href="https://apps.apple.com/us/app/spott-find-people-on-media/id1248964212">
+                    <figure>
+                        <h3><b>Spott</b></h3>
+                        <p>Find friends near you and organize all your media handles in one. Available on the App
+                            Store!</p>
+                        <img class="projects-spott" src="resources/img/Spott-Icon.jpg" />
+                    </figure>
+                </a>
+            </div>
+        </section>
+        <section class="section-learn">
+            <h1>I love to learn, more coming soon...</h1>
+            <div class="certificates">
+                <a href="#"><img class="MTA-Certificate" src="resources/img/MTA-Certificate.png" alt="MTA Certificate" /></a><br>
+                <a href="#"><img class="HTML/CSS-Certificate" src="resources/img/HTMLCSS-Certificate.jpg" alt="HTML/CSS Certificate" /></a>
+                <a href="#"><img class="Xamarin-Certificate" src="resources/img/Xamarin-Certificate.jpg" alt="Xamarin Certificate" /></a>
+                <a href="#"><img class="C#-Certificate" src="resources/img/CSharp-Certificate.jpg" alt="C# Certificate" /></a>
+            </div>
+        </section>
+        <section class="section-contact">
+            <h1>Want to learn more about me?<br>Shoot me an <a class="email-scroll" href="#">email</a> or <a href="resume.pdf">view my
+                    resume!</a></h1>
+            <form class="contact-form" action="https://formspree.io/richard.norman.id@gmail.com" method="POST">
+                <input class="input-name" type="text" placeholder="Your name" name="name">
+                <textarea name="message" placeholder="Message"></textarea>
+                <input type="email" name="replyto" placeholder="Your email">
+                <input class="form-submit" type="submit" value="Send">
+            </form>
+        </section>
+    </div>
+    <div>
+        <div class="view-resume-banner">
+            <a href="resume.pdf">
+                <h3>View my resume</h3>
+            </a>
+        </div>
+        <div class="contact-icons">
+            <a href="https://github.com/richardnorman"><i class="ion-social-github"></i></a>
+            <a href="https://www.linkedin.com/in/richard-norman-693664195/"><i class="ion-social-linkedin"></i></a>
+            <a class="email-scroll" href="#"><i class="ion-email"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
