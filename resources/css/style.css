@@ -1,305 +1,125 @@
-/* GENERAL PAGE */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    font-family: 'open sans', sans-serif;
-    font-weight: 100;
-}
-
-a {
-    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .main {
-    height: 100vh;
-    width: 100vw;
-}
-
-.main section {
-    overflow: hidden;
-    padding: 10px 10px;
-}
-
-.contact-icons {
-    position: fixed;
     display: flex;
-    background-color: #487eb0;
-    bottom: 0;
-    border-top-right-radius: 20px;
-    opacity: 0.92;
+    flex-direction: column;
+    background-color: #555557;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
-.contact-icons a {
-    font-size: 36px;
-    color: white;
-    padding: 5px 10px;
-}
-
-.view-resume-banner {
-    position: fixed;
-    bottom: 65px;
-    background-color: #487eb0;
-    opacity: 0.92;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.view-resume-banner h3:hover {
-    transform: scale(1.08);
-    -webkit-transform: scale(1.08);
-    -moz-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    -o-transform: scale(1.08);
-}
-
-section h1 {
-    position: relative;
-    text-align: center;
-    top: 30%;
-}
-
-.view-resume-banner h3 {
-    font-size: 22px;
-    color: white;
-    padding: 5px 15px;
-}
-
-/* GENERAL HTML ELEMENTS */
 h1 {
-    font-size: 48px;
-    font-weight: 400;
-    color: #487eb0;
+    font-size: 56px;
+    color: white;
+    text-align: center;
 }
 
-h3 {
+h2 {
+    color: rgba(255,255,255,0.85);
+    font-size: 36px;
+    text-align: center;
+}
+
+.email {
+    position: absolute;
+    bottom: 2%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+.view-resume-button {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 40px;
+    padding: 10px 40px;
+    background-color: #555557;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: inline-block;
+    text-align: center;
     font-size: 18px;
-    font-weight: 100;
+    border-color: white;
+    color: rgba(255, 255, 255, 0.836);
 }
 
-p {
-    font-size: 18px;
+.view-resume-button:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 12px rgba(255, 255, 255, 0.4);
 }
 
-a:hover,
-a:active,
-input[type="submit"]:hover,
-input[type="submit"]:active {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+.view-resume-button:active {
+    background-color: rgb(78, 78, 82);
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
 }
 
-a img:hover {
+.view-resume-button:focus {
+    outline: 0;
+}
+
+.links {
+    position: absolute;
+    bottom: 5%;
+}
+
+.social-icon {
+    display: inline-block;
+    color: white;
+    font-size: 300%;
+    padding: 0px 15px;
+    line-height: 120%;
+}
+
+.social-icon:hover {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0 5px 15px rgba(255, 255, 255, 0.4);
+}
+
+.MTA-Badge,
+.UofC {
+    transition: 0.5s;
+    position: absolute;
+    bottom: 1%;
+    width: 10%;
+    height: auto;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.MTA-Badge:hover,
+.UofC:hover {
+    width: 15%;
+    height: auto;
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -ms-transform: scale(1.5);
     -o-transform: scale(1.5);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    bottom: 8%;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 15px 4px -4px rgba(255, 255, 255, 0.4);
 }
 
-.MTA-Certificate:hover {
-    transform: scale(2);
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
-}
-
-
-/* HEADER STYLING */
-.section-header {
-    background-color: white;
-}
-
-.section-header h1,
-.section-header p {
-    color: #487eb0;
-    position: absolute;
-}
-
-.section-header h1 {
-    top: 30%;
-    padding: 10px 20px;
-}
-
-.section-header p {
-    top: 40%;
-    padding: 10px 25px;
-}
-
-.developer-desk-header {
-    height: 300px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-/* EDUCATION */
-.section-education {
-    background-color: #EAF0FE;
-}
-
-.UofC-logo {
-    position: absolute;
-    width: 200px;
-    right: 40%;
-    top: 55%;
-}
-
-.section-education p {
-    position: absolute;
-    font-size: 56px;
-    bottom: 0;
-    right: 5%;
-}
-
-/* LEARN */
-.section-learn {
-    background-color: azure;
-}
-
-.certificates {
-    position: relative;
-    top: 40%;
-    text-align: center;
-}
-
-.certificates a img {
-    width: 225px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-
-/* PROJECTS */
-.section-projects h1 {
-    color: white;
-}
-
-.section-projects {
-    background-color: #487eb0;
-}
-
-.my-projects {
-    position: absolute;
-    display: flex;
-    bottom: 5%;
-    width: 98%;
-    justify-content: center;
-}
-
-.my-projects figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #EAF0FE;
-    width: 225px;
-    height: 275px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-    margin: 0 15px;
-}
-
-.my-projects h3 {
-    padding-top: 10px;
-    text-align: center;
-    color: #487eb0;
-    font-size: 24px;
-}
-
-.my-projects p {
-    text-align: center;
-    padding: 5px 5px;
-    font-size: 14px;
-    color: #487eb0;
-}
-
-.my-projects img {
-    position: absolute;
-    bottom: 2%;
-    border-radius: 10px;
-    width: 150px;
-    overflow: hidden;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.projects-github {
-    width: 175px !important;
-}
-
-.my-projects img:hover {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-}
-
-/* CONTACT */
-.section-contact {
-    background-color: #dcdde1;
-}
-
-.section-contact a {
-    color: #487eb0;
-    opacity: 0.5;
-}
-
-.section-contact a:hover {
-    opacity: 0.7;
-}
-
-.contact-form {
-    text-align: center;
-    position: relative;
-    width: 50%;
-    margin: 250px auto;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    font-size: 18px;
-    width: 100%;
-    padding: 20px;
-    margin: 5px 0;
-    border-radius: 10px;
-    border: 1px solid #cccccc;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-input[type="submit"] {
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 10px 25px;
-    color: white;
-    background-color:  #487eb0;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-
-.form-submit {
-    cursor: pointer;
-}
-
+.MTA-Badge { right: 1%; }
+.UofC { left: 1%; }
+.MTA-Badge:hover { right: 4% }
+.UofC:hover { left: 4% }
