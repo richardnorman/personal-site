@@ -15,14 +15,14 @@
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 62px;
     color: white;
     text-align: center;
 }
 
 h2 {
     color: rgba(255,255,255,0.85);
-    font-size: 36px;
+    font-size: 42px;
     text-align: center;
 }
 
@@ -38,17 +38,16 @@ h2 {
     cursor: pointer;
     text-transform: uppercase;
     margin-top: 40px;
-    padding: 10px 40px;
+    padding: 15px 45px;
     text-decoration: none;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
     display: inline-block;
     text-align: center;
-    font-size: 18px;
-
+    font-size: 24px;
     border: none;
     font-weight: 600;
     color: rgb(240, 240, 240);
